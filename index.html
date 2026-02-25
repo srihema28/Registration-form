@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .gender {
+            width: auto;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Roll Number:</label>
+        <input type="text" placeholder="Enter roll number" required>
+
+        <label>Department:</label>
+        <select required>
+            <option value="">Select Department</option>
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+        </select>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" class="gender"> Male
+        <input type="radio" name="gender" class="gender"> Female
+        <input type="radio" name="gender" class="gender"> Other
+        <br><br>
+
+        <label>Contact Number:</label>
+        <input type="tel" placeholder="Enter contact number" required>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
